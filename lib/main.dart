@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Setting(),
+      home: Dashboard(),
       debugShowCheckedModeBanner: false,
     );
   }
