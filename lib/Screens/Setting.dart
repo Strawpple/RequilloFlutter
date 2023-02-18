@@ -122,7 +122,21 @@ class Setting extends StatelessWidget {
                 color: Color.fromARGB(255, 216, 143, 48),
                 width: MediaQuery.of(context).size.width * .85,
                 child: Center(
-                  child: CardWidget(),
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        top: 100,
+                        left: 500,
+                        child: CardWidget(),
+                      ),
+                      Positioned(
+                        child: Image.asset("assets/iphone-transparent2.png"),
+                        height: MediaQuery.of(context).size.height * .42,
+                        width: MediaQuery.of(context).size.width * .95,
+                      ),
+                    ],
+                  ),
+                  // child: CardWidget(),
                 )),
           )
         ],
@@ -144,9 +158,6 @@ class Setting extends StatelessWidget {
               children: [
                 Positioned(
                   child: Text("Lorem Ipsum"),
-                ),
-                Positioned(
-                  child: Image.asset("assets/iphone-transparent2.png"),
                 ),
               ],
             ),
