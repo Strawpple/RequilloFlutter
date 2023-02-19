@@ -121,21 +121,23 @@ class Setting extends StatelessWidget {
             child: Container(
                 color: Color.fromARGB(255, 216, 143, 48),
                 width: MediaQuery.of(context).size.width * .85,
-                child: Center(
-                  child: Stack(
-                    children: [
-                      Positioned(
-                        top: 100,
-                        left: 500,
-                        child: CardWidget(),
-                      ),
-                      Positioned(
-                        child: Image.asset("assets/iphone-transparent2.png"),
-                        height: MediaQuery.of(context).size.height * .42,
-                        width: MediaQuery.of(context).size.width * .95,
-                      ),
-                    ],
-                  ),
+                height: MediaQuery.of(context).size.width * .55,
+                child: Stack(
+                  children: [
+                    Positioned(
+                      top: 250,
+                      left: 330,
+                      child: CardWidget(),
+                    ),
+                    Positioned(
+                        top: 160,
+                        left: 340,
+                        child: Image.asset(
+                          "assets/iphone-transparent2.png",
+                          height: MediaQuery.of(context).size.height * .24,
+                          width: MediaQuery.of(context).size.width * .40,
+                        )),
+                  ],
                   // child: CardWidget(),
                 )),
           )
@@ -157,8 +159,15 @@ class Setting extends StatelessWidget {
             child: Stack(
               children: [
                 Positioned(
+                  top: 120,
+                  left: 270,
                   child: Text("Lorem Ipsum"),
                 ),
+                Positioned(
+                  top: 150,
+                  left: 250,
+                  child: Text("Iphone Pro Max 30"),
+                )
               ],
             ),
           ),
